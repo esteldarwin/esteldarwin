@@ -26,3 +26,4 @@ r_squared <- R2(predictions, data$mpg)
 cat("RMSE:", rmse, "\n")
 cat("R-squared:", r_squared, "\n")
 # 模型的性能指标
+
