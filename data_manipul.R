@@ -1,7 +1,6 @@
 #Purpose:This scribes how to Use a data frame to process the data
 #Author:Pengcheng Xiong
 #Email:esteldarwin@ustc.mail.edu.cn
-
 music_data <- data.frame(
   name = c("lemon tree","shape of you","city of stars","closer"),
   year = c(2015,2016,2017,2022),
