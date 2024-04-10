@@ -1,3 +1,7 @@
+#Purpose:This scribes how to Use a data frame to process the data
+#Author:Pengcheng Xiong
+#Email:esteldarwin@ustc.mail.edu.cn
+
 music_data <- data.frame(
   name = c("lemon tree","shape of you","city of stars","closer"),
   year = c(2015,2016,2017,2022),
@@ -41,5 +45,5 @@ p <- surveys_long %>%
   ggplot(aes(x = year, y = information, color = name)) +
   geom_line()
 # 2.在图层上添加文本
-p + annotate("text", x = 2019, y = 5, label = "score") + annotate("text", x = 2019, 
-                                                                  y = 98, label = "year")
+p + annotate("text", x = 2019, y = 5, label = "score") + annotate("text", x = 2019, y = 98, label = "year")
+
