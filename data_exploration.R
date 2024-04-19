@@ -4,6 +4,7 @@
 #Email:esteldarwin@mail.ustc.edu.cn
 #Date:2024-4-18
 #----------------------------------------------------------------------------
+
 #1.处理Doubs数据集中的缺失数据,检测环境因素共线性
 install.packages("corrplot")
 install.packages("ade4")
