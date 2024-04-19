@@ -67,6 +67,6 @@ pca_var <- get_pca_var(pca_result)
 pca_ind <- get_pca_ind(pca_result)#提取分析结果
 
 fviz_eig(pca_result, addlabels = TRUE)
-fviz_pca_ind(pca_result, geom = "point", habillage = doubs$fish)#可视化
+fviz_pca_ind(pca_result, geom = "point", habillage = doubs$fish)#结果可视化
 
 
