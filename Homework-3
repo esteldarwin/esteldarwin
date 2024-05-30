@@ -1,0 +1,37 @@
+#Purpose:This scribes how to Use a data frame to process the data
+
+#Author:Pengcheng Xiong
+
+#Email:esteldarwin@ustc.mail.edu.cn
+
+find.package("tidyverse")     
+install.packages("tidyverse") 
+library(tidyverse)           
+
+download.file("https://ndownloader.figshare.com/files/2292169",
+              "data/portal_data_joined.csv")    
+
+data<-read.csv("data/portal_data_joined.csv")  
+write.csv(data, "new_data.csv")                                            
+
+
+str(data)     
+
+is.na(data)                    
+any(is.na(data$column_name))  
+any(is.na(data[i, ]))          
+
+selected_column <- data$column_name  
+data$new_column <- 1:nrow(data)      
+
+data_long <- gather(data,key=column_name,value=count)
+
+
+
+find.package("ggplot2")
+install.packages("ggplot2")
+
+library(ggplot2)
+ggplot(data, aes(x = First, y = Math)) +
+  geom_point() +
+  labs(title = "Studentgrade", x = "Firstname", y = "Mathgrades")
